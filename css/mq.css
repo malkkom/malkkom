@@ -1,0 +1,73 @@
+.mq-inner {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mq-desc {
+    margin: calc(100vh * 527 / 1080) calc(100vh * 173 / 1080) 0 0;
+}
+
+.mq-round {
+    display: block;
+    border-radius: 50%;
+    width: calc(100vh * 23 / 1080);
+    height: calc(100vh * 23 / 1080);;
+    background-color: #147586;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+
+.mq-desc h3 {
+    font-size: calc(100vh * 32 / 1080);
+    font-weight: 700;
+    color: #1A3163;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+
+.mq-desc p {
+    font-size: calc(100vh * 24 / 1080);
+    font-weight: 300;
+    color: #1A3163;
+    line-height: calc(100vh * 35 / 1080);
+}
+
+.mq-img img {
+    width: calc(100vh * 1157 / 1080);
+}
+
+.mq-img {
+    padding: calc(100vh * 5 / 1080) 0 0 calc(100vh * 17 / 1080);
+}
+
+.mq-line1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.mq-l1 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.mq-l1-ani {
+    animation: draw-mq-line1 1s linear forwards;
+    animation-delay: 1s;
+}
+.mq-line2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.mq-l2 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.mq-l2-ani {
+    animation: draw-mq-line2 1s linear forwards;
+}

@@ -1,0 +1,142 @@
+.painpoint {
+    overflow: hidden;
+    text-align: center;
+}
+.painpoint-inner {
+    width: 1480px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.painpoint-text {
+    position: relative;
+    width: calc(100vh * 500 /1080);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.painpoint h2 {
+    color: #1A3163;
+    font-weight: 600;
+    font-size: calc(100vh * 34 /1080);
+    margin-top: calc(100vh * 67 /1080);
+}
+.painpoint h3 {
+    color: #000;
+    font-size: calc(100vh * 30 /1080);
+    font-weight: 600;
+    margin: calc(100vh * 51 /1080) 0 calc(100vh * 39 /1080) 0;
+}
+.painpoint p {
+    font-size: calc(100vh * 24 /1080);
+    font-weight: 300;
+    line-height: calc(100vh * 38 /1080);
+}
+
+.painpoint-highlight {
+    position: absolute;
+    top: calc(100vh * 23 /1080);
+    left: calc(100vh * 60 /1080);
+    width: calc(100vh * 114 /1080);
+    height: calc(100vh * 18 /1080);
+    background-color: #FABA5B;
+    border-radius: calc(100vh * 15 /1080);
+    z-index: -1;
+}
+
+.painpoint-card {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    bottom: calc(100vh * 521 /1080);
+    left: 50.5%;
+    transform: translateX(-50%);
+}
+.p-c-1 img {
+    width: calc(100vh * 366 /1080);
+    margin-bottom: calc(100vh * -25 / 1080);
+}
+.p-c-2 img {
+    width: calc(100vh * 426 /1080);
+    margin-left: calc(100vh * 66 /1080);
+}
+.p-c-3 img {
+    width: calc(100vh * 392 /1080);
+    margin: 0 0 calc(100vh * -25 / 1080) calc(100vh * 56 /1080);
+}
+
+.painpoint-bba {
+    position: absolute;
+    top: calc(100vh * 275 / 1080);
+    right: calc(100vh * 70 / 1080);
+}
+.painpoint-bba img {
+    width: calc(100vh * 222 / 1080);
+    transform: rotate(6.32deg);
+}
+.painpoint-jjo {
+    position: absolute;
+    top: calc(100vh * 314 / 1080);
+    left: calc(100vh * 125 / 1080);
+    z-index: -1;
+}
+.painpoint-jjo img {
+    width: calc(100vh * 165 / 1080);
+    transform: rotate(8.72deg);
+}
+
+.painpoint-c {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    bottom: calc(100vh * -17 /1080);
+    left: 48%;
+    transform: translateX(-50%);
+}
+.p-h-1 img {
+    width: calc(100vh * 635 /1080);
+    margin-left: calc(100vh * 47 /1080);
+}
+.p-h-2 img {
+    width: calc(100vh * 352 /1080);
+    margin-left: calc(100vh * 90 /1080);
+    margin-top: calc(100vh * -21 /1080);
+}
+.p-h-3 img {
+    width: calc(100vh * 494 /1080);
+    margin-left: calc(100vh * 158 /1080);
+}
+
+.painpoint-bc {
+    width: calc(100vh * 1565 /1080);
+    height: calc(100vh * 1458 /1080);
+    border-radius: 50%;
+    background-color: #1a31639c;
+    position: absolute;
+    bottom: calc(100vh * -775 /1080);
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
+.painpoint-sc {
+    width: calc(100vh * 915 /1080);
+    height: calc(100vh * 853 /1080);
+    border-radius: 50%;
+    background-color: #1a31639c;
+    position: absolute;
+    left: 50%;
+    top: calc(100vh * 241 /1080);
+    transform: translate(-50%, 0);
+}
+.painpoint-esc {
+    width: calc(100vh * 466 /1080);
+    height: calc(100vh * 434 /1080);
+    border-radius: 50%;
+    background-color: #0e18296c;
+    position: absolute;
+    left: 50%;
+    top: calc(100vh * 210 /1080);
+    transform: translate(-50%, 0);
+}

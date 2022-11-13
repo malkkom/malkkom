@@ -1,0 +1,60 @@
+.design2 h2 {
+    text-align: center;
+    font-size: calc(100vh * 34 /1080);
+    font-weight: 600;
+    color: #1A3163;
+    margin: calc(100vh * 102 / 1080) 0 calc(100vh * 78 / 1080) 0;
+}
+.design2-logotype {
+    width: 100%;
+}
+.design2-logotype img {
+    width: 100%;
+}
+.design2-left {
+    margin: calc(100vh * 114 / 1080) 0 0 calc(100vh * 281 / 1080);
+}
+.design2-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.design2-inner h3 {
+    font-size: calc(100vh * 24 / 1080);
+    font-weight: 600;
+}
+.design2-color {
+    width: calc(100vh * 638 / 1080);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: calc(100vh * 40 / 1080);
+}
+.design2-color2 {
+    background-color: #e95d6b;
+}
+.design2-color3 {
+    background-color: #1A3163;
+}
+.design2-color p {
+    font-size: calc(100vh * 24 / 1080);
+    margin-top: calc(100vh * 25 / 1080);
+}
+.design2-color1, .design2-color2, .design2-color3 {
+    width: calc(100vh * 196 / 1080);
+    height: calc(100vh * 196 / 1080);
+    border: 1px solid #000;
+    border-radius: 50%;
+    box-shadow: 0 calc(100vh * 4 / 1080) calc(100vh * 4 / 1080) rgba(0, 0, 0, 0.25);
+}
+
+.design2-right {
+    margin: calc(100vh * 114 / 1080) calc(100vh * 250 / 1080) 0 0;
+}
+.design2-right h3 {
+    margin-bottom: calc(100vh * 23 / 1080);
+}
+.design2-right p {
+    font-size: calc(100vh * 24 / 1080);
+    line-height: calc(100vh * 35 / 1080);
+    margin-bottom: calc(100vh * 68 / 1080);
+}

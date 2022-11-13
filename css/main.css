@@ -1,0 +1,81 @@
+/* =================== intro =================== */
+
+.main {
+    background: url(../img/main-bg.png) no-repeat 0 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: calc(100vh * 180 / 1080) 0 0 0;
+}
+
+.image {
+    width: calc(100vh * 900 / 1080);
+    margin-left: calc(100vh * 200 /1080);
+    position: relative;
+}
+.main-mockup img {
+    width: calc(100vh * 800 / 1080);
+    position: absolute;
+    top: 0;
+    transform: translateZ(10px);
+    z-index: 2;
+}
+
+.main-bba img {
+    width: calc(100vh * 400 / 1080);
+    position: absolute;
+    top: 0;
+    left: calc(100vh * 400 / 1080);
+    transform: rotate(27deg) translateZ(-10px);
+    z-index: 1;
+}
+.main-jjo  img {
+    width: calc(100vh * 380 / 1080);
+    position: absolute;
+    top: calc(100vh * 380 / 1080);
+    left: calc(100vh * 40 / 1080);
+    transform: rotate(5.3deg);
+    z-index: 2;
+}
+
+.desc {
+    padding-top: calc(100vh * 150 / 1080);
+    padding-right: calc(100vh * 300 /1080);
+}
+
+.desc p {
+    font-size: calc(100vh * 25 / 1080);
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: calc(100vh * 10 /1080);
+    margin-top: calc(100vh * 30 /1080);
+}
+
+.desc h3 {
+    font-size: calc(100vh * 55 /1080);
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: calc(100vh * 15 /1080);
+}
+
+.main-name {
+    display: flex;
+}
+
+.main-name img {
+    margin-left: calc(100vh * 30 /1080);
+    margin-top: calc(100vh * -10 /1080);
+    width: calc(100vh * 220 /1080);
+}
+
+.main-name h2 img {
+    width: calc(100vh * 260 /1080);
+    margin-top: 0;
+    margin-left: 0;
+}
+

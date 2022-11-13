@@ -1,0 +1,78 @@
+.mnc-inner {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mnc-desc {
+    margin: calc(100vh * 244 / 1080) calc(100vh * 50 /1080) 0 calc(100vh * 130 /1080);
+}
+
+.mnc-round {
+    display: block;
+    border-radius: 50%;
+    width: calc(100vh * 23 / 1080);
+    height: calc(100vh * 23 / 1080);;
+    background-color: #FABA5B;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+
+.mnc-desc h3 {
+    font-size: calc(100vh * 32 / 1080);
+    font-weight: 700;
+    color: #1A3163;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+
+.mnc p {
+    font-size: calc(100vh * 24 / 1080);
+    font-weight: 300;
+    color: #1A3163;
+    line-height: calc(100vh * 35 / 1080);
+}
+
+.mnc-img {
+    display: flex;
+}
+
+.mnc-img-category img {
+    width: calc(100vh * 584 / 1080);
+    margin-top: calc(100vh * 89 /1080);
+}
+
+.mnc-img-map img {
+    width: calc(100vh * 572 / 1080);
+    margin: calc(100vh * 116 /1080) 0 0 calc(100vh * -132 /1080);
+}
+
+.mnc-line1 {
+    position: absolute;
+    top: 0;
+    left: 46px;
+    z-index: -1;
+}
+.mnc-l1 {
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.mnc-l1-ani {
+    animation: draw-mnc-line1 1s linear forwards;
+    animation-delay: 1s;
+}
+.mnc-line2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.mnc-l2 {
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.mnc-l2-ani {
+    animation: draw-mnc-line2 1s linear forwards;
+}

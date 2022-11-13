@@ -1,0 +1,63 @@
+/* =================== Web Fonts =================== */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* XEION CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Font - Pretandard KR */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* =================== Reset CSS =================== */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Pretendard, sans-serif;
+}
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: #414141;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+img {
+    pointer-events: none
+}
+
+.fp-tableCell {
+    vertical-align: baseline;
+}

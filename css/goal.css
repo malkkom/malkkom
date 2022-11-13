@@ -1,0 +1,67 @@
+.goal {
+    overflow: hidden;
+    text-align: center;
+}
+.goal-inner {
+    width: 1490px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.goal h2 {
+    color: #1A3163;
+    font-weight: 600;
+    font-size: calc(100vw * 34 /1920);
+    margin-bottom: calc(100vw * 46 /1920);
+    padding-top: calc(100vw * 127 /1920);
+}
+.goal-text h3 {
+    color: #000;
+    font-size: calc(100vw * 45 /1920);
+    font-weight: 600;
+    margin: calc(100vw * 3 /1920) 0 calc(100vw * 95 /1920) 0;
+}
+.goal p {
+    color: #ffffff;
+    font-size: calc(100vw * 20 /1920);
+}
+.goal-text p {
+    color: #414141;
+    font-size: calc(100vw * 25 /1920);
+    line-height: calc(100vw * 46 /1920);
+}
+.goal p span {
+font-weight: 600;
+}
+ .goal-highlight {
+    position: absolute;
+    top: calc(100vw * 307 /1920);
+    left: calc(100vw * 525 /1920);
+    width: calc(100vw * 441 /1920);
+    height: calc(100vw * 23 /1920);
+    background-color: #FABA5B;
+    border-radius: calc(100vw * 15 /1920);
+    z-index: -1;
+    transform: translate(-50%, 0);
+}
+.goal-circles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(100vw * 71 /1920);
+}
+.goal-circles img {
+    width: calc(100vw * 430 /1920);
+}
+.goal-circles1 img {
+    margin-left: 0;
+}
+
+.goal-bg {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background-color: #1A3163;
+    z-index: -1;
+}  

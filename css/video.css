@@ -1,0 +1,129 @@
+.video {
+    background-image: url(../img/video-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    text-align: center;
+}
+
+.video-inner {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+ .video-inner h2 {
+    font-size: calc(100vh * 32 /1080);
+    font-weight: 400;
+    color: #1A3163;
+    margin: calc(100vh * 195 /1080) 0 calc(100vh * 35 /1080) 0;
+ }
+ .video-inner h2 span {
+  font-weight: 600;
+ }
+
+  .contents{
+    width: 100%;
+    height: calc(100vh * 600 /1080);
+    max-width: calc(100vh * 900 /1080); 
+    margin: auto; 
+  }
+  .video_w{ 
+    overflow: hidden; 
+    position: relative; 
+    z-index: 2; width: 100%; 
+    background: #222; 
+    border-radius: calc(100vh * 20 /1080);
+    box-shadow: 0 calc(100vh * 10 /1080) calc(100vh * 40 /1080) rgba(0, 0, 0, 0.4);
+    margin-bottom: calc(100vh * 20 /1080);
+  }
+  
+  /* 컨트롤러 */
+  .video_control{
+    position: relative;
+    padding: calc(100vh * 20 /1080) 0;
+    text-align: center;
+  }
+  
+  /* 시간 */
+  .time{ 
+    position: absolute;
+    top: calc(100vh * 25 /1080); 
+    left: calc(100vh * 10 /1080);
+  }
+  .time::after{
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    width: 90%; 
+    height: calc(100vh * 1 /1080);
+    margin-left: 5%;
+    background: #000;
+  }
+  .time span{
+    display: block;
+    padding: calc(100vh * 4 /1080) 0;
+    font-size: calc(100vh * 12 /1080);
+    font-weight: 400;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  /* 이전 / 재생 / 다음 버튼 */
+  .btn_w button{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 calc(100vh * 20 /1080);
+    width: calc(100vh * 60 /1080);
+    height: calc(100vh * 60 /1080);
+    background-color: #1A3163;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    font-size: calc(100vh * 12 /1080);
+    color: #fff;
+  }
+  .btn_w button:hover{
+    background-color: #EA5E6B;
+    box-shadow: 0 calc(100vh * 5 /1080) calc(100vh * 10 /1080) rgba(0, 0, 0, 0.25); 
+  }
+
+  .video-chr1 {
+    position: absolute;
+    top: calc(100vh * 230 /1080);
+    left: calc(100vh * -70 /1080);
+
+  }
+  .video-chr1 img {
+    width: calc(100vh * 702 /1080);
+    z-index: -2;
+  }
+  .video-chr2 {
+    position: absolute;
+    top: calc(100vh * 230 /1080);
+    right: 0;
+  }
+  .video-chr2 img {
+    width: calc(100vh * 432 /1080);
+  }
+  .video-bba {
+    position: absolute;
+    top: calc(100vh * 543 /1080);
+    left: calc(100vh * 397 /1080);
+    z-index: 5;
+    pointer-events: none;
+  }
+  .video-bba img {
+    width: calc(100vh * 214 /1080);
+  }
+  .video-jjo {
+    position: absolute;
+    top: calc(100vh * 575 /1080);
+    right: calc(100vh * 390 /1080);
+    z-index: 5;
+    pointer-events: none;
+  }
+  .video-jjo img {
+    width: calc(100vh * 236 /1080);
+  }

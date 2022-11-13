@@ -1,0 +1,58 @@
+.background {
+    position: relative;
+    overflow: hidden;
+}
+.background-inner {
+    width: 1480px;
+    height: 100vh;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.background-inner h2 {
+    font-size: calc(100vh * 34 /1080);
+    font-weight: 600;
+    color: #1A3163;
+    margin-bottom: calc(100vh * 207 /1080);
+    padding: calc(100vh * 231 /1080) 0 0 calc(100vh * 124 /1080) ;
+}
+
+.background-text {
+    padding-left: calc(100vh * 124 /1080);
+}
+
+.background-text h3 {
+    font-size: calc(100vh * 30 /1080);
+    font-weight: 500;
+    color: #000;
+    margin-bottom: calc(100vh * 29 /1080);
+}
+
+.background-text p {
+    font-size: calc(100vh * 18 /1080);
+    font-weight: 300;
+    line-height: calc(100vh * 36 /1080);
+    margin-bottom: calc(100vh * 29 /1080);
+}
+.background-text span {
+    font-size: calc(100vh * 16 /1080);
+    color: #1A3163;
+}
+.background-bgi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:  -2;
+}
+.background-bgi img {
+    width: 1381px;
+}
+.background-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.background-gradient img {
+    width: 1559px;
+}

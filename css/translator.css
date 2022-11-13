@@ -1,0 +1,77 @@
+.translator-inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.trans-round {
+    display: block;
+    border-radius: 50%;
+    width: calc(100vh * 23 / 1080);
+    height: calc(100vh * 23 / 1080);;
+    background-color: #1A3163;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+.trans-desc {
+    margin: calc(100vh * 187 / 1080) calc(100vh * 151 / 1080) 0 0;
+}
+.trans-desc h3 {
+    font-size: calc(100vh * 32 / 1080);
+    font-weight: 700;
+    color: #1A3163;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+
+.trans-desc p {
+    font-size: calc(100vh * 24 / 1080);
+    font-weight: 300;
+    color: #1A3163;
+    line-height: calc(100vh * 35 / 1080);
+}
+
+.translator-img {
+    display: flex;
+    align-items: flex-start;
+    margin: calc(100vh * 218 / 1080) 0 0 calc(100vh * 16 / 1080);
+}
+
+.trans-img1 img {
+    width: calc(100vh * 652 / 1080);
+}
+
+.trans-img2 img {
+    width: calc(100vh * 676 / 1080);
+    margin-left: calc(100vh * -180 / 1080);
+}
+
+.translator-line1 {
+    position: absolute;
+    top: 81px;
+    left: 0;
+    z-index: -1;
+}
+.translator-l1 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.translator-l1-ani {
+    animation: draw-translator-line1 1s linear forwards;
+    animation-delay: 1s;
+}
+.translator-line2 {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: -2;
+}
+.translator-l2 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.translator-l2-ani {
+    animation: draw-translator-line2 1s linear forwards;
+}

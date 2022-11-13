@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>말꼼</title>
+    <link rel="icon" href="./img/favicon.png" sizes="32x32">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/survey.css">
+    <link rel="stylesheet" href="./css/painpoint.css">
+    <link rel="stylesheet" href="./css/goal.css">    
+    <link rel="stylesheet" href="./css/design.css">
+    <link rel="stylesheet" href="./css/design2.css">
+    <link rel="stylesheet" href="./css/character.css">
+    <link rel="stylesheet" href="./css/design-intro.css">
+    <link rel="stylesheet" href="./css/posting.css">
+    <link rel="stylesheet" href="./css/mnc.css">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="stylesheet" href="./css/mq.css">
+    <link rel="stylesheet" href="./css/translator.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body>
+    <div id="fullpage">
+        <!-- Section : header -->
+        <header>
+            <nav class="nav-bar">
+                <h1 class="logo">
+                    <a datamenuanchor="section0" href="#section0">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </h1>
+                <ul class="gnb">
+                    <li datamenuanchor="section1"><a href="#section1"><span class="menu-title"><span class="menu-word"
+                                    data-hover="영상">영상</span></span></a></li>
+                    <li datamenuanchor="section2"><a href="#section2"><span class="menu-title"><span class="menu-word"
+                                    data-hover="기획">기획</span></span></a></li>
+                    <li datamenuanchor="section3"><a href="#section8"><span class="menu-title"><span class="menu-word"
+                                    data-hover="디자인">디자인</span></span></a></li>
+                    <li datamenuanchor="section4"><a href="#section14"><span class="menu-title"><span class="menu-word"
+                                    data-hover="서비스">서비스</span></span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Section : main -->
+        <section class="section main">
+            <div class="main-content">
+                <div class="image">
+                    <div class="main-mockup"><img src="./img/main-mockup.png" alt=""></div>
+                    <div class="main-bba"><img src="./img/bba.gif" alt=""></div>
+                    <div class="main-jjo"><img src="./img/jjo.gif" alt=""></div>
+                </div>
+                <div class="desc">
+                    <p>무슨 말인지 어려워? 너의 ‘말눈치’ 우리가 키워줄게!</p>
+                    <h3>말눈치 상승 APP서비스</h3>
+                    <div class="main-name">
+                        <h2><img src="./img/logo-text.svg" alt=""></h2>
+                        <img src="./img/logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section : video -->
+        <section class="section video">
+            <div class="video-inner">
+                <h2>나의 말눈치를 <span>말꼼</span>하게!</h2>
+                <div class="contents">
+                    <div class="video_w">
+                        <div id="myPlayer" class="myPlayer"></div>
+                    </div>
+                    <div class="video_control">
+                        <div class="time">
+                            <span class="now_time"></span>
+                            <span class="total_time"></span>
+                        </div>
+                        <div class="btn_w">
+                            <button class="btn_prev" onclick="$('#myPlayer').YTPPlayPrev()">Prev</button>
+                            <button class="btn_play pause">Play</button>
+                            <button class="btn_next" onclick="$('#myPlayer').YTPPlayNext()">Next</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-chr1" data-aos="fade-right" data-aos-duration="500"><img src="./img/video-chr1.png" alt=""></div>
+                <div class="video-chr2" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500"><img src="./img/video-chr2.png" alt=""></div>
+                <div class="video-bba" data-aos="zoom-in" data-aos-delay="600"><img src="./img/video-bba.png" alt=""></div>
+                <div class="video-jjo" data-aos="zoom-in" data-aos-delay="600"><img src="./img/video-jjo.png" alt=""></div>
+            </div>
+        </section>
+        <!-- Section : background -->
+        <section class="section background">
+            <div class="background-inner" data-aos="fade" data-aos-delay="600">
+                <h2>
+                    Background
+                </h2>
+                <div class="background-text">
+                    <h3>디지털 세대의 ‘실질적 문맹’이 심각?</h3>
+                    <p>
+                        한 카페가 ‘심심한 사과의 말씀을 드린다’며 sns에 올린 공지를 발단으로, 단어를 잘못 <br>
+                        이해한 이들이 ‘마을의 표현 정도가 깊고 간절하다’는 뜻의 ‘심심하다’를 ‘하는 일이 없어<br>
+                        지루하고 재미가 없다’는 뜻의 ‘심심하다’로 오해하며 불쾌감을 표했고,<br>
+                        이는 디지털 세대의 실질적 문맹 논쟁으로 이어졌다.
+                    </p>
+                    <span>서울 뉴스1 | 소봄이 기자 "실질 문맹률 심각"…'심심한 사과'에 분노한 누리꾼들, 왜?</span>
+                </div>
+            </div>
+            <div class="background-bgi" data-aos="fade-left" data-aos-duration="500"><img src="./img/background-bgi.png" alt=""></div>
+            <div class="background-gradient"><img src="./img/background-gradient.png" alt=""></div>
+        </section>
+        <!-- Section : survey -->
+        <section class="section survey">
+            <div class="survey-inner">
+                <div class="survey-desc">
+                    <h3 class="ssf" data-aos="fade" data-aos-duration="500">
+                        사회생활에서 <span>말눈치가</span><br>
+                        얼마나 중요할까?
+                    </h3>
+                    <div class="survey-highlight ssf" data-aos="fade-right" data-aos-delay="900" data-aos-duration="500"></div>
+                    <div class="survey-img">
+                        <div class="survey-q ssf" data-aos="fade" data-aos-delay="300" data-aos-duration="500"><img src="./img/survey-q.png" alt=""></div>
+                        <div class="survey-jjo ssf" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800"><img src="./img/survey-jjo.png" alt=""></div>
+                    </div>
+                    <span id="sub-title" class="ssf" data-aos="fade" data-aos-delay="600" data-aos-duration="500">Survey</span>
+                    <p class="ssf" data-aos="fade" data-aos-delay="600" data-aos-duration="500">
+                        설문조사를 통해 조사한 105개의 답변에 의하면 사회생활에서<br>
+                        말눈치를 필요하다고 생각하는 의견은 99%로, 필요하다는 의견이 대부분이었다.
+                    </p>
+                </div>
+                <div class="survey-chart ssf" data-aos="fade" data-aos-duration="500">
+                    <canvas id="pie-chart"></canvas>
+                    <span id="chart-desc">필요하다. 99%</span>
+                    <div class="survey-dash"><img src="./img/survey-dash.svg" alt=""></div>
+                    <p>필요하지 않다. 1%</p>
+                </div>
+            </div>
+        </section>
+         <!-- Section : painpoint -->
+         <section class="section painpoint">
+            <div class="painpoint-inner">
+                <h2>pain point</h2>
+                <div class="painpoint-text">
+                    <h3>말눈치를 위한 서비스가 필요해!</h3>
+                    <p>
+                        새로운 단어는 생겨나고 말눈치를 키우기 힘든 요즘,<br>
+                        재미 있게 배울 수 있는 방법이 있을까?
+                    </p>
+                    <div class="painpoint-highlight ppf" data-aos="fade-right" data-aos-duration="500"></div>
+                </div>
+                <div class="painpoint-card ppf">
+                    <div class="p-c-1 ppf" data-aos="fade" data-aos-delay="900" data-aos-duration="500"><img src="./img/p-2-card-img-1.png" alt=""></div>
+                    <div class="p-c-2 ppf" data-aos="fade" data-aos-delay="900" data-aos-duration="500"><img src="./img/p-2-card-img-2.png" alt=""></div>
+                    <div class="p-c-3 ppf"data-aos="fade" data-aos-delay="900" data-aos-duration="500"><img src="./img/p-2-card-img-3.png" alt=""></div>
+                </div>
+                <div class="painpoint-bba ppf" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="500"><img src="./img/painpoint-bba.gif" alt=""></div>
+                <div class="painpoint-jjo ppf" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500"><img src="./img/painpoint-jjo.gif" alt=""></div>
+            </div>
+            <div class="painpoint-c">
+                    <div class="p-h-1 ppf" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500"><img src="./img/pp-h-1.png" alt=""></div>
+                    <div class="p-h-2 ppf" data-aos="fade-up" data-aos-duration="500"><img src="./img/pp-h-2.png" alt=""></div>
+                    <div class="p-h-3 ppf" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500"><img src="./img/pp-h-3.png" alt=""></div>
+                </div>
+                <div class="painpoint-bc">
+                    <div class="painpoint-sc">
+                        <div class="painpoint-esc"></div>
+                    </div>
+                </div>
+         </section>
+         <!-- Section : goal -->
+         <section class="section goal">
+            <div class="goal-inner">
+                <h2>Service goal</h2>
+                <div class="goal-text">
+                    <p>팝콘브레인족들을 위한 짧고 굵게 배우는</p>
+                    <h3>말눈치 상승 APP, 말꼼</h3>
+                    <div class="goal-highlight gf" data-aos="fade-right" data-aos-duration="500"></div>
+                </div>
+                <div class="goal-circles">
+                    <div class="goal-circle1 gf" data-aos="fade-right" data-aos-delay="600" data-aos-duration="500"><img src="./img/goal-circle1.png" alt=""></div>
+                    <div class="goal-circle2 gf" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500"><img src="./img/goal-circle2.png" alt=""></div>
+                    <div class="goal-circle3 gf" data-aos="fade-left" data-aos-delay="600" data-aos-duration="500"><img src="./img/goal-circle3.png" alt=""></div>
+                </div>
+                <p class="gf" data-aos="fade" data-aos-delay="1200" data-aos-duration="500"><span>*팝콘브레인</span> : 팝콘이 튀어 오르는 것처럼 즉각적인 현상에만 반응할 뿐 깊이 생각하지 않는 뇌의 상태 </p>
+            </div>
+            <div class="goal-bg gf" data-aos="fade-up" data-aos-duration="500"></div>
+         </section>
+
+         <!-- Section : design -->
+         <section class="section design">
+            <div class="color-heading">
+                <h2>Brand Color</h2>
+            </div>
+            <div class="color-box">
+                <div class="main-color d1f" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
+                    <h4>Main Color</h4>
+                    <p>#1A3163</p>
+                    <span>Mal-Kkom Navy</span>
+                </div>
+                <div class="point-color d1f" data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">
+                    <h4>Point Color</h4>
+                    <p>#EA5E6B</p>
+                    <span>Mal-Kkom Pink</span>
+                </div>
+                <div class="sub-color">
+                    <div class="sub-1 d1f" data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
+                        <h4>Sub 1</h4>
+                        <p>#FCEDB9</p>
+                    </div>
+                    <div class="sub-2 d1f" data-aos="fade-right" data-aos-delay="900" data-aos-duration="500">
+                        <h4>Sub 2</h4>
+                        <p>#FABA5B</p>
+                    </div>
+                    <div class="sub-3 d1f" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="500">
+                        <h4>Sub 3</h4>
+                        <p>#FA9583</p>
+                    </div>
+                    <div class="sub-4 d1f" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="500">
+                        <h4>Sub 4</h4>
+                        <p>#147586</p>
+                    </div>
+                </div>
+            </div>
+            <div class="design-inner">
+                <div class="design-font d1f" data-aos="fade" data-aos-delay="1300" data-aos-duration="500">
+                    <div class="font-title">
+                        <h3>프리텐다드 Pretendard</h3>
+                    </div>
+                    <div class="font-desc">
+                        <div class="font-light">
+                            <p>말눈치도</p>
+                            <span class="line"></span>
+                            <p class="gray">Light</p>
+                        </div>
+                        <div class="font-medium">
+                            <p>쉽고 재미있게</p>
+                            <span class="line"></span>
+                            <p class="gray">Medium</p>
+                        </div>
+                        <div class="font-semibold">
+                            <p>배우자!</p>
+                            <span class="line"></span>
+                            <p class="gray">Semibold</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-icon d1f" data-aos="fade" data-aos-delay="1300" data-aos-duration="500">
+                    <div class="icon-title">
+                        <h3>Icon</h3>
+                    </div>
+                    <div class="icon-img">
+                        <img src="./img/design-icon.png" alt="">
+                        <p>비활성화</p>
+                    </div>
+                    <div class="icon-img">
+                        <img src="./img/design-icon-a.png" alt="">
+                        <p>활성화</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- Section : design2 -->
+         <section class="section design2">
+            <h2>Logo & Naming</h2>
+            <div class="design2-logotype d2f" data-aos="fade" data-aos-duration="500"><img src="./img/design2-logo.svg" alt=""></div>
+            <div class="design2-inner">
+                <div class="design2-left d2f" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
+                    <h3>Color</h3>
+                    <div class="design2-color">
+                        <div class="design2-c1">
+                            <div class="design2-color1"></div>
+                            <p>#FFFFFF</p>
+                        </div>
+                        <div class="design2-c2">
+                            <div class="design2-color2"></div>
+                            <p>#E95D6B</p>
+                        </div>
+                        <div class="design2-c3">
+                            <div class="design2-color3"></div>
+                            <p>#1A3163</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="design2-right d2f" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
+                    <div class="design2-naming">
+                        <h3>Naming</h3>
+                        <p>일이나 사정에 막힘 없이 훤하고 눈치 빠른 사람을 뜻하는 빠꼼이를<br>
+                            활용하여 '말을 가르쳐주는 빠꼼이' 를 뜻하는 ‘말꼼’이 탄생했다.</p>
+                    </div>
+                    <div class="design2-logo">
+                        <h3>Logo</h3>
+                        <p>‘말꼼’을 통해 키운 말눈치를 통해, 서로 다른 말풍선에서 나오는 말이<br>
+                            지만 원활한 소통이 가능하다는 의미를 담은 로고이다. </p>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- Section : character -->
+         <section class="section character">
+            <div class="character-inner">
+                <div class="chr-bba">
+                    <h2>Character</h2>
+                    <div class="bba-inner">
+                        <div class="bba-left">
+                            <div class="bba-img" >
+                                <img src="./img/bba.gif" alt="" class="cf" data-aos="fade-up" data-aos-duration="500">
+                            </div>
+                        </div>
+                        <div class="bba-right">
+                            <h3>빠꼼이</h3>
+                            <p>
+                                아이큐가 높은 곰으로 태어나 사람들이 틀리고 있는 부분들을<br>
+                                지적해주는 선생님이다. 친절하고 곰 같은 성격의 진짜 곰이다.
+                            </p>
+                            <div class="bba-img-2">
+                                <div class="chr-bba-img1 cf" data-aos="fade" data-aos-delay="300" data-aos-duration="500">
+                                    <img src="./img/character-bba1.png" alt="">
+                                </div>
+                                <div class="chr-bba-img2 cf" data-aos="fade" data-aos-delay="500" data-aos-duration="500">
+                                    <img src="./img/character-bba2.png" alt="">
+                                </div>
+                                <div class="chr-bba-img3 cf" data-aos="fade" data-aos-delay="700" data-aos-duration="500">
+                                    <img src="./img/character-bba3.png" alt="">
+                                </div>
+                                <div class="chr-bba-img4 cf" data-aos="fade" data-aos-delay="900" data-aos-duration="500">
+                                    <img src="./img/character-bba4.png" alt="">
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chr-zzo">
+                    <div class="zzo-inner">
+                        <div class="zzo-left">
+                            <div class="zzo-img">
+                                <img src="./img/jjo.gif" alt="" class="cf" data-aos="fade-up" data-aos-duration="500">
+                            </div>
+                        </div>
+                        <div class="zzo-right">
+                            <h3>쪼꼼이</h3>
+                            <p>
+                                빠꼼이와 같이 말눈치를 지적해주곤 한다. 쪼꼼이는 체구와<br>
+                                달리 까칠 그 자체이다. 차갑고 여우 같은 성격의 곰이다.
+                            </p>
+                            <div class="zzo-img-2">
+                                <div class="chr-zzo-img1 cf" data-aos="fade" data-aos-delay="300" data-aos-duration="500">
+                                    <img src="./img/character-zzo1.png" alt="">
+                                </div>
+                                <div class="chr-zzo-img2 cf" data-aos="fade" data-aos-delay="500" data-aos-duration="500">
+                                    <img src="./img/character-zzo2.png" alt="">
+                                </div>
+                                <div class="chr-zzo-img3 cf" data-aos="fade" data-aos-delay="700" data-aos-duration="500">
+                                    <img src="./img/character-zzo3.png" alt="">
+                                </div>
+                                <div class="chr-zzo-img4 cf" data-aos="fade" data-aos-delay="900" data-aos-duration="500">
+                                    <img src="./img/character-zzo4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- Section : design-intro -->
+         <section class="section design-intro">
+            <div class="design-intro-inner">
+                <h2>UI design</h2>
+            </div>
+            <div class="design-intro-bg"><img src="./img/design-intro-bg.png" alt="" class="dif" data-aos="fade" data-aos-duration="500"></div>
+            <div class="design-intro-line1">
+                <svg width="1920" height="846" viewBox="0 0 1920 846" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="d-i-l1" d="M-0.000138605 195.139C172.469 176.66 341.915 160.273 513.355 197.547C637.089 224.45 755.384 281.082 865.212 342.466C953.92 392.046 1039.19 449.261 1119.14 512.005C1192.91 569.893 1262.2 633.232 1337.66 689.047C1431.64 758.565 1533.06 819.474 1645.28 854.42C1730.06 880.822 1819.3 886.358 1907.04 895.698" stroke="#F2F4F5" stroke-width="350" stroke-linecap="round"/>
+                </svg>
+                
+            </div>
+            <div class="design-intro-line2">
+                <svg width="1587" height="992" viewBox="0 0 1587 992" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="d-i-l2" d="M176 1108.72C278.894 969.082 381.289 833.082 524.594 731.865C628.021 658.814 749.694 609.858 869.149 570.355C965.634 538.448 1065.42 514.237 1165.7 497.675C1258.22 482.395 1351.73 474.102 1443.86 456.176C1558.61 433.849 1672.03 400.229 1773.61 341.1C1850.35 296.428 1914.72 234.374 1980.88 176" stroke="#F2F4F5" stroke-width="350" stroke-linecap="round"/>
+                </svg>
+            </div>
+         </section>
+         <!-- Section : posting -->
+         <section class="section posting">
+            <div class="posting-inner">
+                <div class="posting-desc">
+                    <div class="posting-round"></div>
+                    <h3>posting</h3>
+                    <p>
+                        다양한 말의 시작이 되는 어원, 새롭게 생겨나는 신조어들에<br>
+                        대해 몰랐던 사실을 알 수 있는 유익한 포스팅까지 알아보기 !
+                    </p>
+                </div>
+            </div>
+            <div class="posting-img pf" data-aos="fade" data-aos-duration="500">
+                <img src="./img/posting-mockup.png" alt="">
+            </div>
+            <div class="posting-line1">
+                <svg width="1920" height="696" viewBox="0 0 1920 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="p-l1" d="M-88 322.533C-72.8401 306.482 -32.5123 297.583 -9.80548 288.556C33.998 271.142 173.338 256.264 221.545 250.203C347.425 234.376 472.957 225.3 594.333 260.623C812.305 324.056 943.086 515.547 1193.22 520.888C1410.95 525.538 1560.15 383.884 1690.57 274.44C1762.26 214.28 1844.65 175 1953.34 175C1993 175 2040.57 184.496 2077 195.386" stroke="#EA5E6B" stroke-width="350" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="posting-line2">
+                <svg width="1257" height="1080" viewBox="0 0 1257 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="p-l2" d="M177.811 1253.83C170.756 1232.91 181.831 1193.13 184.521 1168.84C189.71 1121.99 241.99 991.973 259.27 946.564C304.393 827.988 355.313 712.889 443.483 622.303C601.823 459.626 832.298 434.053 954.445 215.705C1060.77 25.6469 1005.74 -172.597 970.337 -339.133C950.875 -430.675 954.871 -521.859 1005.9 -617.829C1024.52 -652.845 1055.24 -690.39 1081.95 -717.44" stroke="#EA5E6B" stroke-opacity="0.13" stroke-width="350" stroke-linecap="round"/>
+                </svg>
+            </div>
+         </section>
+         <!-- Section : mnc -->
+         <section class="section mnc">
+            <div class="mnc-inner">
+                <div class="mnc-desc">
+                    <div class="mnc-round"></div>
+                    <h3>Maps & Categories</h3>
+                    <p>
+                        직접 읽고 공부하는 건 지루하니까!<br>
+                        종류별 말눈치 퀴즈로 간단하게 지식 GET하기! 
+                    </p>
+                </div>
+                <div class="mnc-img">
+                    <div class="mnc-img-category mncf" data-aos="fade" data-aos-delay="500" data-aos-duration="500">
+                        <img src="./img/category-mockup.png" alt="">
+                    </div>
+                    <div class="mnc-img-map mncf" data-aos="fade" data-aos-delay="800" data-aos-duration="500">
+                        <img src="./img/map-mockup.png" alt="">
+                    </div>
+                </div>
+                <div class="mnc-line1">
+                    <svg width="1874" height="1080" viewBox="0 0 1874 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="mnc-l1" d="M175.878 1275.39C176.096 1211.61 203.26 1163.89 228.008 1106.48C281.834 981.624 356.103 868.248 461.487 780.974C582.763 680.54 725.145 588.487 876.132 541.437C1021.83 496.034 1164.72 479.095 1316.13 468.635C1438.89 460.154 1563.61 465.705 1684.66 439.895C1742.28 427.609 1792.99 397.881 1842.61 367.281C1885.86 340.606 1929.8 314.406 1968.32 281.022C2025.67 231.303 2090.04 170.201 2115.88 96.9306C2123.95 74.0511 2135.52 40.1326 2121.17 17.1612" stroke="#FABA5B" stroke-width="350" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="mnc-line2">
+                    <svg width="1920" height="990" viewBox="0 0 1920 990" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="mnc-l2" d="M-158.304 103.404C-107.278 61.1958 -47.8382 50.127 17.4212 30.789C159.355 -11.2693 308.236 -30.172 460.809 -8.09804C636.389 17.3046 821.91 64.3082 978.326 147.745C1129.27 228.26 1255.29 325.545 1382.87 433.611C1486.31 521.233 1580.11 619.662 1696.01 694.464C1751.18 730.073 1814.82 748.844 1878.29 766.206C1933.62 781.34 1989.11 797.317 2046.06 804.394C2130.87 814.934 2230.27 823.237 2309.04 794.193C2333.64 785.124 2369.79 771.377 2376.8 745.213" stroke="#FABA5B" stroke-opacity="0.13" stroke-width="350" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+         </section>
+         <!-- quiz -->
+         <section class="section quiz">
+            <div class="quiz-inner">
+                <div class="quiz-left">
+                    <div class="quiz-img tab1 active">
+                        <img src="./img/quiz-proto1.gif" alt="">
+                    </div>
+                    <div class="quiz-img tab2">
+                        <img src="./img/quiz-proto2.gif" alt="">
+                    </div>
+                    <div class="quiz-img tab3">
+                        <img src="./img/quiz-proto3.gif" alt="">
+                    </div>
+                </div>
+                <div class="quiz-right">
+                    <div class="quiz-desc active" id="tab1">
+                        <div class="quiz-text">
+                            <div class="tab-round"></div>
+                            <h2>채팅 형식으로 만나는 문맥 퀴즈</h2>
+                            <p>
+                                채팅 형식으로 진행되는 문맥 관련 퀴즈를 직접 풀어봐!<br>
+                                모르고 있던 다양한 표현들을 퀴즈로 만나볼 수 있는 기회
+                            </p>
+                        </div>
+                        <div class="qr-code">
+                            <img src="./img/qr-code1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="quiz-desc" id="tab2">
+                        <div class="quiz-text">
+                            <div class="tab-round"></div>
+                            <h2>줄을 그어 올바른 단어 조합하기</h2>
+                            <p>
+                                익일은 언제고 금일은 언제지? 만.반.잘.부가 뭐야?<br>
+                                정확한 뜻 풀이를 찾아서 자유롭게 줄을 긋고 조합하기!
+                            </p>
+                        </div>
+                        <div class="qr-code">
+                            <img src="./img/qr-code2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="quiz-desc" id="tab3">
+                        <div class="quiz-text">
+                            <div class="tab-round"></div>
+                            <h2>영상 퀴즈로 쉽고 빠르게 이해하기</h2>
+                            <p>
+                                회자정리가 어떤 상황에서 쓰는 말이야?<br>
+                                어려운 단어도 재밌는 영상들로 웃으면서 즐기자!
+                            </p>
+                        </div>
+                        <div class="qr-code">
+                            <img src="./img/qr-code3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <li data-alt="tab1" class="btn1 active">채팅 퀴즈</li>
+                        <li data-alt="tab2" class="btn2">줄긋기 퀴즈</li>
+                        <li data-alt="tab3" class="btn3">영상 퀴즈</li>
+                    </div>
+                </div>
+                <div class="quiz-line1">
+                    <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="quiz-l1" d="M80 976C102.702 933.91 148.421 897.587 184.641 868.218C261.15 806.179 334.025 745.622 418.584 694.387C674.723 539.194 976.502 571 1262.05 571C1364.65 571 1190.5 570.466 1562 571C1781 559.5 1863.84 527.706 1939 489C2064.74 424.241 2172.38 303.149 2197 151" stroke="#FA9583" stroke-width="350" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="quiz-line2">
+                <svg width="1920" height="898" viewBox="0 0 1920 898" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="quiz-l2" d="M-130.944 53.1051C-87.1416 33.9145 -28.7516 33.4391 17.8717 32.5947C116.357 30.8111 211.066 27.9576 309.243 39.6445C606.63 75.0451 824.852 285.902 1049.87 461.704C1130.72 524.872 1213.94 580.088 1303.21 630.164C1376.8 671.442 1450.9 688.747 1533.95 704.516C1672.91 730.9 1818.87 741.643 1931.94 636.904" stroke="#FA9583" stroke-opacity="0.13" stroke-width="350" stroke-linecap="round"/>
+                </svg>
+            </div>
+         </section>
+         <!-- making quiz -->
+         <section class="section making-quiz">
+            <div class="mq-inner">
+                <div class="mq-img mqf" data-aos="fade" data-aos-duration="500">
+                    <img src="./img/making-quiz.png" alt="">
+                </div>
+                <div class="mq-desc">
+                    <div class="mq-round"></div>
+                    <h3>Making a Quiz</h3>
+                    <p>
+                        과연 나만 몰랐을까? 나만 몰랐을 거라고 생각하던 퀴즈를<br>
+                        직접 만들어볼 수 있는 기회! 다양하고 재미있는 퀴즈 기다릴게
+                    </p>
+                </div>
+                <div class="mq-line1">
+                    <svg width="1491" height="805" viewBox="0 0 1491 805" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="mq-l1" d="M-279.737 629.966C-144.481 624.061 -9.23696 622.588 124.559 601.591C324.196 570.261 491.764 492.676 666.354 395.64C853.144 291.823 1025.18 144.104 1166 -16.6005C1216.18 -73.8716 1284.84 -133.719 1315.78 -202.999" stroke="#147586" stroke-width="350" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="mq-line2">
+                    <svg width="1541" height="1080" viewBox="0 0 1541 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="mq-l2" d="M-65.5478 -56.667C-4.3403 77.6407 52.7458 213.582 127.37 340.818C238.715 530.666 379.812 670.988 541.869 811.18C715.249 961.168 923.327 1079.98 1130.61 1162.46C1204.48 1191.86 1288.35 1238.95 1365.45 1244.47" stroke="#147586" stroke-opacity="0.13" stroke-width="350" stroke-linecap="round"/>
+                    </svg>    
+                </div>
+            </div>
+         </section>
+        <section class="section translator">
+            <div class="translator-inner">
+                <div class="translator-img">
+                    <div class="trans-img1 tf" data-aos="fade" data-aos-delay="300" data-aos-duration="500">
+                        <img src="./img/translate-mockup-1.png" alt="">
+                    </div>
+                    <div class="trans-img2 tf" data-aos="fade" data-aos-delay="600" data-aos-duration="500">
+                        <img src="./img/translate-mockup-2.png" alt="">
+                    </div>
+                </div>
+                <div class="trans-desc">
+                    <div class="trans-round"></div>
+                    <h3>Translator</h3>
+                    <p>
+                        빠르고 쉽게, 내가 모르던 단어들을 확인할 수 있는 말눈치 번역기<br>
+                        누구보다 빠르게 남들과는 다르게 알아보자
+                    </p>
+                </div>
+                <div class="translator-line1">
+                    <svg width="1920" height="999" viewBox="0 0 1920 999" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="translator-l1" d="M-467 184.491C-202.281 184.491 75.8386 160.075 339.6 189.564C551.45 213.249 733.286 287.255 910.941 399.458C1014.28 464.722 1012.5 496.5 1137 630C1244 761 1359.61 832.393 1405.55 857.926C1600 966 1749.23 1025.85 1929.97 1029.14C2031 1030.97 2130.49 1051.97 2232.45 1051.97C2260.39 1051.97 2373.05 1067.52 2386.54 1040.55" stroke="#1A3163" stroke-width="350" stroke-linecap="round"/>
+                    </svg>                        
+                </div>
+                <div class="translator-line2">
+                    <svg width="1911" height="1080" viewBox="0 0 1911 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="translator-l2" d="M175.325 1920.46C302.461 1688.27 414.616 1432.6 567.157 1215.41C689.676 1040.97 841.917 917.016 1025.65 815.078C1132.53 755.785 1249.44 749.166 1360.91 705.849C1460.61 667.102 1513 648.5 1660 577C1849.5 472.5 1977.68 380.634 2067.37 223.677C2117.5 135.942 2183.69 58.7615 2232.66 -30.6667C2246.08 -55.1736 2313.83 -146.53 2296.65 -171.305" stroke="#1A3163" stroke-opacity="0.13" stroke-width="350" stroke-linecap="round"/>
+                        </svg>
+                </div>
+            </div>
+        </section>
+        <footer class="section footer">
+            <div class="footer-pre-loader">
+                <div class="footer-pre-round ff" data-aos="fade-down" ></div>
+                <h2 class="ff" data-aos="fade-down">말눈치를 고민하지 마세요</h2>
+                <div class="footer-pre-text">
+                    <span class="ff" data-aos="fade-right" data-aos-delay="300">말눈치를</span>
+                    <span class="ff" data-aos="fade-left" data-aos-delay="600">말꼼하게</span>
+                </div>
+                <div class="footer-pre-img">
+                    <img class="footer-pre-bg ff" data-aos="fade" data-aos-delay="800" data-aos-duration="500" src="./img/footer-pre-bg.svg" alt="">
+                    <img class="footer-pre-img1 ff" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="500" src="./img/footer-pre-img1.png" alt="">
+                    <img class="footer-pre-img2 ff" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="500" src="./img/footer-pre-img2.png" alt="">
+                    <img class="footer-pre-img3 ff" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="500" src="./img/footer-pre-img3.png" alt="">
+                    <img class="footer-pre-img5 ff" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" src="./img/footer-pre-img5.png" alt="">
+                    <img class="footer-pre-img4 ff" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" src="./img/footer-pre-img4.png" alt="">
+                </div>
+            </div>
+            <h2 class="footer-heading">Team. 깔꼼</h2>
+            <svg class="footer-arrow" width="95" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.63 89.08">
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1" d="M5,5S50.44,8.32,56.28,30.73,49,58.27,40.25,58.07s-10.94-7.42-9.78-13.53,8.27-11.4,16.88-13,54.41,1.38,66.91,52.09L83,77.4l33.47,6.68,10.12-32.25"/>
+                  </g>
+                </g>
+              </svg>
+              <h3 class="footer-check">깔꼼한 포트폴리오를 확인해보세요!</h3>
+            <div class="card-inner">    
+                <div class="card-con">
+                    <div class="card">
+                        <img src="./img/yuna.svg" alt="">
+                        <div class="card-content">
+                            <a href="">Portfolio 보러가기</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h2>Planner</h2>
+                        <h3>김윤아</h3>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card">
+                        <img src="./img/daeun.svg" alt="">
+                        <div class="card-content">
+                            <a href="">Portfolio 보러가기</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h2>Designer</h2>
+                        <h3>신다은</h3>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card">
+                        <img src="./img/jeongeun.svg" alt="">
+                        <div class="card-content">
+                            <a href="">Portfolio 보러가기</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h2>Designer</h2>
+                        <h3>허정은</h3>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card">
+                        <img src="./img/hyuntae.svg" alt="">
+                        <div class="card-content">
+                            <a href="">Portfolio 보러가기</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h2>Developer</h2>
+                        <h3>김현태</h3>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card">
+                        <img src="./img/dongmin.svg" alt="">
+                        <div class="card-content">
+                            <a href="">Portfolio 보러가기</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h2>Developer</h2>
+                        <h3>서동민</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-pc">
+                <a href="./proposal/깔꼼_말꼼.pdf" download class="proposal">기획서 다운로드</a>
+                <p class="copyright">ⓒ2022 malkkom all rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/quiz.js"></script>
+</body>
+</html>

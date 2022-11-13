@@ -1,0 +1,106 @@
+.survey-inner {
+    width: 1480px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.survey-desc {
+    position: relative;
+}
+
+.survey-desc h3 {
+    font-size: calc(100vh * 70 /1080);
+    font-weight: 300;
+    color: #1A3163;
+}
+
+.survey-desc h3 span {
+    font-weight: 500;
+}
+
+.survey-highlight {
+    width: calc(100vh * 258 /1080);
+    height: calc(100vh * 28 /1080);
+    position: absolute;
+    top: calc(100vh * 64 /1080);
+    left: calc(100vh * 374 /1080);
+    background-color: #FABA5B;
+    border-radius: calc(100vh * 15 /1080);
+    z-index: -1;
+}
+
+.survey-img {
+    display: flex;
+    align-items: center;
+    margin: calc(100vh * 57 /1080) 0 calc(100vh * 49 /1080) calc(100vh * -12 /1080);
+}
+
+.survey-q img {
+    width: calc(100vh * 509 /1080);
+}
+
+.survey-jjo {
+    z-index: -1;
+}
+.survey-jjo img {
+    width: calc(100vh * 88 /1080);
+}
+
+#sub-title {
+    font-size: calc(100vh * 24 /1080);
+    font-weight: 600;
+    color: #1A3163;
+    margin-bottom: calc(100vh * 15 /1080);
+    display: block;
+}
+
+.survey-desc p {
+    font-size: calc(100vh * 24 /1080);
+    font-weight: 300;
+    line-height: calc(100vh * 42 /1080);
+}
+
+.survey-chart {
+    width: calc(100vh * 600 /1080);
+    height: calc(100vh * 502 /1080);
+    position: relative;
+    margin-left: calc(100vh * 80 /1080);
+}
+.survey-dash {
+    position: absolute;
+    left: calc(100vh * 250 /1080);
+    top: calc(100vh * -20 /1080);
+    z-index: -1;
+}
+.survey-dash img {
+    width: calc(100vh * 193 /1080);
+}
+.survey-chart p {
+    position: absolute;
+    left: calc(100vh * 450 / 1080);
+    top: calc(100vh * -29 / 1080);
+    font-size: calc(100vh * 20 /1080);
+    color: #FABA5B;
+}
+
+#pie-chart {
+    width: calc(100vh * 500 /1080);
+    height: calc(100vh * 500 /1080);
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+}
+
+#chart-desc {
+    font-size: calc(100vh * 20 /1080);
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 12%;
+}
+

@@ -1,0 +1,73 @@
+/* design-intro */
+@keyframes draw-intro-line1 {
+    0% {stroke-dashoffset: 2200; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes draw-intro-line2 {
+    0% {stroke-dashoffset: 1800; opacity: 1;}
+    100% {stroke-dashoffset: 0;  opacity: 1;}
+}
+/* posting */
+@keyframes draw-posting-line1 {
+    0% {stroke-dashoffset: 2400; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes draw-posting-line2 {
+    0% {stroke-dashoffset: 1600; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+/* mnc */
+@keyframes draw-mnc-line1 {
+    0% {stroke-dashoffset: 2400; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes draw-mnc-line2 {
+    0% {stroke-dashoffset: 2400; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+/* quiz */
+@keyframes smooth {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes draw-quiz-line1 {
+    0% {stroke-dashoffset: 2400; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes draw-quiz-line2 {
+    0% {stroke-dashoffset: 2400; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+/* mq */
+@keyframes draw-mq-line1 {
+    0% {stroke-dashoffset: 2000; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes draw-mq-line2 {
+    0% {stroke-dashoffset: 2000; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+/* translator */
+@keyframes draw-translator-line1 {
+    0% {stroke-dashoffset: 3000; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes draw-translator-line2 {
+    0% {stroke-dashoffset: 3000; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+/* footer */
+@keyframes draw-arrow {
+    0% {stroke-dashoffset: 300; opacity: 1;}
+    100% {stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes footer-check {
+    0% {left: calc(100vh * 250 /1080); opacity: 0;}
+    100% {left: calc(100vh * 280 /1080); opacity: 1;}
+}

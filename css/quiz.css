@@ -1,0 +1,143 @@
+.quiz-inner {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-left {
+    width: 50vw;
+    text-align: center;
+}
+
+.quiz-img img {
+    width: calc(100vh * 437 / 1080);
+    margin-top: calc(100vh * 122 / 1080);
+    margin-left: calc(100vh * 245 / 1080);
+    transform: rotate(-20deg);
+}
+.quiz-img.tab3 img {
+    width: calc(100vh * 395 / 1080);
+    margin-top: calc(100vh * 142 / 1080);
+}
+
+.quiz-right {
+    width: 50vw;
+    padding-left: calc(100vh * 40 / 1080);
+}
+
+.quiz-desc {
+    display: flex;
+    padding-top: calc(100vh * 170 / 1080);
+    margin-bottom: calc(100vh * 103 / 1080);
+}
+
+.tab-round {
+    width: calc(100vh * 23 / 1080);
+    height: calc(100vh * 23 / 1080);
+    background-color: #FA9583;
+    border-radius: 50%;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+.quiz-text {
+    width: calc(100vh * 524 / 1080);
+    margin-right: calc(100vh * 10 / 1080);
+}
+.quiz-text h2 {
+    font-size: calc(100vh * 32 / 1080);
+    font-weight: 500;
+    color: #1A3163;
+    margin-bottom: calc(100vh * 17 / 1080);
+}
+
+.quiz-text p {
+    font-size: calc(100vh * 24 / 1080);
+    font-weight: 300;
+    color: #1A3163;
+    line-height: calc(100vh * 35 / 1080);
+}
+
+.qr-code {
+    margin-top: calc(100vh * 19 / 1080);
+}
+.qr-code img {
+    width: calc(100vh * 180 / 1080);
+}
+
+.btn li {
+    width: calc(100vh * 508 / 1080);
+    height: calc(100vh * 59 / 1080);
+    border-radius: calc(100vh * 30 / 1080);
+    background-color: #fff;
+    border: 2px solid #EA5E6B;
+    font-size: 25px;
+    color: #EA5E6B;
+    font-weight: 500;
+    text-align: center;
+    line-height: calc(100vh * 59 / 1080);
+    margin-bottom: calc(100vh * 30 / 1080);
+}
+
+.btn li:last-child {
+    margin-bottom: 0;
+}
+
+.btn li:hover,
+.btn li.active {
+    background-color: #EA5E6B;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.quiz-desc {
+    display: none;
+}
+
+.quiz-desc.active {
+    display: flex;
+}
+
+.quiz-img {
+    display: none;
+}
+
+.quiz-img.active {
+    display: block;
+}
+
+.smooth {
+    animation: smooth 2s;
+    transition: all 2s;
+}
+
+.quiz-line1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: -1;
+}
+.quiz-l1 {
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.quiz-l1-ani {
+    animation: draw-quiz-line1 1s linear forwards;
+    animation-delay: 1s;
+}
+.quiz-line2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.quiz-l2 {
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 0;
+    opacity: 0;
+}
+.quiz-l2-ani {
+    animation: draw-quiz-line2 1s linear forwards;
+}
