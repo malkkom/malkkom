@@ -61,3 +61,21 @@ img {
 .fp-tableCell {
     vertical-align: baseline;
 }
+
+.btn-top {
+    position: fixed;
+    right: 50px;
+    bottom: -50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FABA5B;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    transition: 0.5s;
+    z-index: 10;
+}
+.btn-show {
+    bottom: 50px;
+}
